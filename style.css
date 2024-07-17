@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+
+padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Reusable Components */
+.flex{
+    display: flex;
+}
+.navbar a{
+    color: rgba(58, 58, 58, 1);
+    padding-right: 34px;
+    font-size: 1rem;
+    font-weight:600 ;
+}
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title{
+    font-size: 1.5rem;
+    font-weight:700 ;
+}
+
+.hero-bg{
+   
+    max-width: 440px;
+  height: auto;
+    background-image:url(assets/images/Circle\ design.svg);
+ 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hero-bg img{
+    max-width: 100%
+
+   
+}
+.hero-container{
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items:center;
+}
+.hero-container h1{
+    color: rgb(58, 58, 58);
+font-family: Poppins;
+font-size: 3.25rem;
+font-weight: 700;
+line-height: 70px;
+}
+.hero-container p{
+ 
+    font-size: 1rem;
+font-weight: 600;
+line-height: 24px;
+margin-top: 16px;
+}
+.hero-container button{
+    border-radius: 41px;
+
+    background: rgb(224, 44, 109);
+    padding: 10px 24px 10px 24px;
+    color: rgb(255, 255, 255);
+font-family: Poppins;
+font-size: 1rem;
+font-weight: 700;
+line-height: 24px;
+border: 0;
+margin-top: 16px;
+}
+
+
+/* header section styling ends here */
+
+
+
+main{
+    max-width: 1475px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+
+
+
+/* Responisive Media Query For Mobile */
+@media screen and (max-width:576px){
+.hero-container{
+    flex-direction: column-reverse;
+}
+.hero-details{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,108 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
 
-*{
-    margin: 0;
-
-padding: 0;
+  padding: 0;
 }
-body{
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(255, 255, 255);
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /* Reusable Components */
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-.navbar a{
-    color: rgba(58, 58, 58, 1);
-    padding-right: 34px;
-    font-size: 1rem;
-    font-weight:600 ;
+section {
+  margin-top: 133px;
 }
-.navbar{
+.navbar a {
+  color: rgba(58, 58, 58, 1);
+  padding-right: 34px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* Navbr */
+.navbar {
+  background-color: rgb(4, 255, 171);
   justify-content: space-between;
   align-items: center;
 }
-.nav-title{
-    font-size: 1.5rem;
-    font-weight:700 ;
+.nav-title {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.hero-bg{
-   
-    max-width: 440px;
+.hero-bg {
+  max-width: 440px;
   height: auto;
-    background-image:url(assets/images/Circle\ design.svg);
- 
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.hero-bg img{
-    max-width: 100%
+  background-image: url(assets/images/Circle\ design.svg);
 
-   
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.hero-container{
-    margin-top: 50px;
-    justify-content: space-around;
-    align-items:center;
+.hero-bg img {
+  max-width: 100%;
 }
-.hero-container h1{
-    color: rgb(58, 58, 58);
-font-family: Poppins;
-font-size: 3.25rem;
-font-weight: 700;
-line-height: 70px;
+.hero-container {
+  margin-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
 }
-.hero-container p{
- 
-    font-size: 1rem;
-font-weight: 600;
-line-height: 24px;
-margin-top: 16px;
+.hero-container h1 {
+  color: rgb(58, 58, 58);
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 70px;
 }
-.hero-container button{
-    border-radius: 41px;
+.hero-container p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 16px;
+}
+.btn-primary {
+  border-radius: 41px;
 
-    background: rgb(224, 44, 109);
-    padding: 10px 24px 10px 24px;
-    color: rgb(255, 255, 255);
-font-family: Poppins;
-font-size: 1rem;
-font-weight: 700;
-line-height: 24px;
-border: 0;
-margin-top: 16px;
+  background: rgb(224, 44, 109);
+  padding: 10px 24px 10px 24px;
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  border: 0;
+  margin-top: 16px;
 }
-
 
 /* header section styling ends here */
 
+main {
+  max-width: 80%;
 
-
-main{
-    max-width: 1475px;
-    border: 2px solid black;
-    margin: 0 auto;
+  margin: 0 auto;
+}
+.company-logos {
+  justify-content: space-between;
+  margin: 43px 45px;
 }
 
+/* Popular Collection Section Styling */
+.popular-collection {
+  background-color: rgb(255, 255, 255);
+}
+.popular-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.card {
 
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+border-radius: 12px;
+ 
+}
+.card .card-img img {
+border-radius: 10px;
+width: 100%;
+height: 350px;
 
+}
+.card-img img {
+
+}
+
+.card h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.card h4 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+.card .ratings {
+  color: rgb(94, 99, 102);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.card p {
+  font-size: 1rem;
+  color: rgb(120, 120, 133);
+}
+
+.rating-star{
+  color: rgb(251, 130, 0);
+
+ 
+}
+
+/* Featured products Secction Styling */
+.featured-container {
+  justify-content: space-between;
+}
+.featured-img {
+  max-width: 537px;
+}
+.featured-details {
+  max-width: 811px;
+}
+.featured-img img {
+  max-width: 100%;
+}
+.featured-details h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 21px;
+}
+
+.featured-details p {
+  margin-top: 21px;
+  font-size: 1.33rem;
+  font-weight: 600;
+  color: rgb(108, 108, 108);
+}
+.featured-details button {
+  margin-top: 21px;
+}
+
+/* footer section Styling */
+footer {
+  max-width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-description h3 {
+  font-size: 1.99rem;
+  font-weight: 700px;
+}
+.footer-description p {
+  font-size: 1rem;
+  color: rgb(217, 219, 225);
+}
+footer .socials {
+  font-size: 1.4rem;
+}
+footer .socials i {
+  padding-right: 10px;
+}
+.menu, .hide{
+  display: none;
+}
 
 /* Responisive Media Query For Mobile */
-@media screen and (max-width:576px){
-.hero-container{
+/* ................................... */
+@media screen and (max-width: 576px) {
+  .navbar ul{
+    display: none;
+  }
+  .navbar{
+    padding: 5px 10px;
+  }
+  .menu{
+    font-size: 30px;
+  }
+  .hero-container {
     flex-direction: column-reverse;
-}
-.hero-details{
+  }
+  .hero-details {
     text-align: center;
+  }
+  .menu{
+    display: block;
+  }
+
+.company-logos{
+
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 12px;
+ 
+
+}
+
+.popular-cards{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
 }
 
 

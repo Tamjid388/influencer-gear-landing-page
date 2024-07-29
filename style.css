@@ -30,10 +30,17 @@ section {
   font-weight: 600;
 }
 /* Navbr */
+.nav-container{
+  width: 100%;
+  background-color: rgba(224, 249, 2, 0.629);
+}
 .navbar {
-  background-color: rgb(4, 255, 171);
+ 
   justify-content: space-between;
   align-items: center;
+  max-width: 80%;
+
+  margin: 0 auto; 
 }
 .nav-title {
   font-size: 2.5rem;
@@ -55,7 +62,7 @@ section {
   margin-top: 50px;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid black;
+ 
 }
 .hero-container h1 {
   color: rgb(58, 58, 58);
@@ -100,6 +107,13 @@ main {
 .popular-collection {
   background-color: rgb(255, 255, 255);
 }
+.popular-collection h1{
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 60px;
+  margin-bottom: 70px;
+
+} 
 .popular-cards{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -150,15 +164,19 @@ height: 350px;
 /* Featured products Secction Styling */
 .featured-container {
   justify-content: space-between;
+  margin-bottom: 112px;
 }
 .featured-img {
-  max-width: 537px;
+width: 433px;
+
+ 
 }
 .featured-details {
   max-width: 811px;
 }
 .featured-img img {
-  max-width: 100%;
+width:100%;
+object-fit: cover;
 }
 .featured-details h3 {
   font-size: 3rem;
@@ -175,6 +193,38 @@ height: 350px;
 .featured-details button {
   margin-top: 21px;
 }
+
+/* locate-main styling */
+.locate-main{
+ 
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+
+}
+.locate-main img{
+  width: 100%;
+}
+.child{
+  border: 2px solid brown;
+
+}
+.child p{
+  font-weight: 500;
+  color: rgb(108, 108, 108);
+}
+.child .bar {
+  border: 4px solid rgb(255, 255, 4);
+  width: 10%;
+  margin-top: 5px; /* Adjust margin as needed for spacing */
+}
+
+
+
+
+
+
 
 /* footer section Styling */
 footer {
@@ -243,6 +293,10 @@ footer .socials i {
   display: grid;
   grid-template-columns: repeat(1,1fr);
   gap: 20px;
+}
+
+.featured-container{
+  flex-direction: column;
 }
 
 
